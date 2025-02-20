@@ -20,8 +20,8 @@ function Navigation({ functionHandle }: Props) {
         <img
           src={
             settings.tema == "light"
-              ? "/public/Imagologo.png"
-              : "/public/imagologoDark.png"
+              ? "/gestor-gastos/public/Imagologo.png"
+              : "/gestor-gastos/public/imagologoDark.png"
           }
           className="h-24 max-md:h-20"
         />
