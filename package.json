@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "npm run build && gh-pages -d dist"
+    "deploy": "npm run build && gh-pages -d dist -r https://github.com/vfernandez24/gestor-gastos.git"
   },
   "dependencies": {
     "autoprefixer": "^10.x",
@@ -19,14 +19,13 @@
     "react-dom": "^18.3.1",
     "react-router-dom": "^7.1.1",
     "recharts": "^2.15.1",
-    "tailwindcss": "^3.x",
-    "xlsx": "^0.18.5"
+    "tailwindcss": "^3.x"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
     "@types/react": "^18.3.18",
     "@types/react-dom": "^18.3.5",
-    "@vitejs/plugin-react-swc": "^3.5.0",
+    "@vitejs/plugin-react-swc": "^3.8.0",
     "autoprefixer": "^10.4.20",
     "eslint": "^9.17.0",
     "eslint-plugin-react-hooks": "^5.0.0",
@@ -37,6 +36,6 @@
     "tailwindcss": "^3.4.17",
     "typescript": "~5.6.2",
     "typescript-eslint": "^8.18.2",
-    "vite": "^6.0.5"
+    "vite": "^6.1.1"
   }
 }
