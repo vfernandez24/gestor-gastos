@@ -1,0 +1,115 @@
+[
+  {
+    "id": 1,
+    "name": "Hogar",
+    "type": "gasto",
+    "icon": "fa-solid fa-house",
+    "color": "#"
+  },
+  {
+    "id": 2,
+    "name": "Alimentación",
+    "type": "gasto",
+    "icon": "fa-solid fa-utensils",
+    "color": "#"
+  },{
+    "id": 3,
+    "name": "Transporte",
+    "type": "gasto",
+    "icon": "fa-solid fa-car",
+    "color": "#"
+  },{
+    "id": 4,
+    "name": "Salud",
+    "type": "gasto",
+    "icon": "fa-solid fa-heart-pulse",
+    "color": "#"
+  },{
+    "id": 5,
+    "name": "Educación",
+    "type": "gasto",
+    "icon": "fa-solid fa-book",
+    "color": "#"
+  },{
+    "id": 6,
+    "name": "Entertenimiento",
+    "type": "gasto",
+    "icon": "fa-solid fa-gamepad",
+    "color": "#"
+  },{
+    "id": 7,
+    "name": "Finanzas personales",
+    "type": "gasto",
+    "icon": "fa-solid fa-piggy-bank",
+    "color": "#"
+  },{
+    "id": 8,
+    "name": "Ropa",
+    "type": "gasto",
+    "icon": "fa-solid fa-tshirt",
+    "color": "#"
+  },{
+    "id": 9,
+    "name": "Otros",
+    "type": "gasto",
+    "icon": "fa-solid fa-question-circle",
+    "color": "#"
+  },
+
+  {
+    "id": 10,
+    "name": "Salario",
+    "type": "ingreso",
+    "icon": "fa-solid fa-briefcase",
+    "color": "#"
+  },
+  {
+    "id": 11,
+    "name": "Bonificaciones",
+    "type": "ingreso",
+    "icon": "fa-solid fa-award",
+    "color": "#"
+  },{
+    "id": 12,
+    "name": "Trabajo independiente",
+    "type": "ingreso",
+    "icon": "fa-solid fa-laptop",
+    "color": "#"
+  },{
+    "id": 13,
+    "name": "Comisiones",
+    "type": "ingreso",
+    "icon": "fa-solid fa-chart-line",
+    "color": "#"
+  },{
+    "id": 14,
+    "name": "Inversiones",
+    "type": "ingreso",
+    "icon": "fa-solid fa-chart-pie",
+    "color": "#"
+  },{
+    "id": 15,
+    "name": "Subvenciones o ayudas",
+    "type": "ingreso",
+    "icon": "fa-solid fa-hand-holding-dollar",
+    "color": "#"
+  },{
+    "id": 16,
+    "name": "Ventas",
+    "type": "ingreso",
+    "icon": "fa-solid fa-shopping-bag",
+    "color": "#"
+  },{
+    "id": 17,
+    "name": "Regalos o donaciones",
+    "type": "ingreso",
+    "icon": "fa-solid fa-gift",
+    "color": "#"
+  },{
+    "id": 18,
+    "name": "Otros",
+    "type": "ingreso",
+    "icon": "fa-solid fa-question-circle",
+    "color": "#"
+  }
+]
