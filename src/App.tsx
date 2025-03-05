@@ -1,25 +1,17 @@
-import { useEffect } from "react";
 import Default from "./components/Default";
-import {
-  initialCategories,
-  initialTransactions,
-  initialSettings,
-} from "./data/settingsData";
-import { loadFromStorage, saveToStorage } from "./storage";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Index from "./pages/home/Index";
 
 function App() {
-  const categories = loadFromStorage("categories", initialCategories);
-  const transactions = loadFromStorage("transactions", initialTransactions);
-  const settings = loadFromStorage("settings", initialSettings);
-
-  useEffect(() => {
-    saveToStorage("transactions", transactions);
-    saveToStorage("settings", settings);
-  }, [categories, transactions, settings]);
-  
   return (
     <>
-      <Default></Default>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/gestor-gastos/" element={<Index />} />
+
+          <Route path="/gestor-gastos/dashboard/*" element={<Default />}></Route>
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

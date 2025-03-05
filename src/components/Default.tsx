@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 import Home from "../pages/dashboard/home/App";
 import Search from "../pages/dashboard/busqueda/App";
 import Categorias from "../pages/dashboard/categorias/AppCat";
@@ -451,6 +451,7 @@ function Default({}: Props) {
             </div>
             <div className="flex justify-center w-full gap-10">
               <button
+                type="button"
                 onClick={() => setDivPresentation(0)}
                 className="flex items-center justify-center w-10 h-10 pt-2 text-5xl rounded-full"
                 style={{ color: settings.color }}
@@ -549,6 +550,7 @@ function Default({}: Props) {
             </div>
             <div className="flex justify-center w-full gap-10">
               <button
+                type="button"
                 onClick={() => setDivPresentation(1)}
                 className="flex items-center justify-center w-10 h-10 pt-2 text-5xl rounded-full"
                 style={{ color: settings.color }}
@@ -974,31 +976,31 @@ function Default({}: Props) {
             </div>
             <nav className="left__nav h-fit w-[250px]">
               <LeftLi
-                aHref="/gestor-gastos/src/pages/dashboard/home/home.html"
+                aHref="/gestor-gastos/dashboard/home"
                 liInner={String(t("a.0"))}
                 classLi="Resumen"
                 iClass="fa-solid fa-chart-pie"
               ></LeftLi>
               <LeftLi
-                aHref="/gestor-gastos/src/pages/dashboard/busqueda/busqueda.html"
+                aHref="/gestor-gastos/dashboard/busqueda"
                 liInner={String(t("a.1"))}
                 classLi="Búsqueda"
                 iClass="fa-solid fa-search"
               ></LeftLi>
               <LeftLi
-                aHref="/gestor-gastos/src/pages/dashboard/transactions/transactions.html"
+                aHref="/gestor-gastos/dashboard/transactions"
                 liInner={String(t("a.2"))}
                 classLi="Transacciones"
                 iClass="fa-solid fa-exchange-alt"
               ></LeftLi>
               <LeftLi
-                aHref="/gestor-gastos/src/pages/dashboard/categorias/categorias.html"
+                aHref="/gestor-gastos/dashboard/categorias"
                 liInner={String(t("a.4"))}
                 classLi="Categorias"
                 iClass="fa-solid fa-folder"
               ></LeftLi>
               <LeftLi
-                aHref="/gestor-gastos/src/pages/dashboard/otrasOpciones/otrasOpciones.html"
+                aHref="/gestor-gastos/dashboard/otrasOpciones"
                 liInner={String(t("a.5"))}
                 classLi="OtrasOpciones"
                 iClass="fa-solid fa-ellipsis"
@@ -1007,7 +1009,7 @@ function Default({}: Props) {
           </div>
           <nav className="left__nav h-fit w-[250px]">
             <LeftLi
-              aHref="/gestor-gastos/src/pages/dashboard/ajustes/ajustes.html"
+              aHref="/gestor-gastos/dashboard/ajustes"
               liInner={String(t("a.6"))}
               classLi="Ajustes"
               iClass="fa-solid fa-gear"
@@ -1025,19 +1027,19 @@ function Default({}: Props) {
         >
           <Routes>
             <Route
-              path="/gestor-gastos/src/pages/dashboard/home/home.html"
+              path="home"
               element={
                 <Home functionEdit={showEdit} functionDelete={showDelete} />
               }
             />
             <Route
-              path="/gestor-gastos/src/pages/dashboard/busqueda/busqueda.html"
+              path="busqueda/"
               element={
                 <Search functionEdit={showEdit} functionDelete={showDelete} />
               }
             />
             <Route
-              path="/gestor-gastos/src/pages/dashboard/transactions/transactions.html"
+              path="transactions/"
               element={
                 <TransacctionsPage
                   functionDelete={showDelete}
@@ -1045,18 +1047,9 @@ function Default({}: Props) {
                 />
               }
             />
-            <Route
-              path="/gestor-gastos/src/pages/dashboard/categorias/categorias.html"
-              element={<Categorias />}
-            />
-            <Route
-              path="/gestor-gastos/src/pages/dashboard/ajustes/ajustes.html"
-              element={<AjustesApp />}
-            />
-            <Route
-              path="/gestor-gastos/src/pages/dashboard/otrasOpciones/otrasOpciones.html"
-              element={<OtrasOpciones />}
-            />
+            <Route path="categorias" element={<Categorias />} />
+            <Route path="ajustes/" element={<AjustesApp />} />
+            <Route path="otrasOpciones/" element={<OtrasOpciones />} />
           </Routes>
         </div>
         <button
@@ -1088,12 +1081,12 @@ export function LeftLi({ iClass, liInner, aHref, classLi }: PropsLeft) {
           : "hover:bg-[#4d4d4da4] dark"
       }`}
     >
-      <a href={aHref}>
+      <Link to={aHref}>
         <div className="w-[75px] h-[50px] flex items-center justify-center">
           <i className={iClass}></i>
         </div>
         <div className="w-[175px] h-[50x] flex items-center">{liInner}</div>
-      </a>
+      </Link>
     </li>
   );
 }

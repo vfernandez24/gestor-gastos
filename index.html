@@ -16,14 +16,64 @@
       src="https://kit.fontawesome.com/16ace90703.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Smooth Scroll -->
+    <script src="/src/javascript/scroll.js" defer></script>
+    <style>
+      .hero__a {
+        position: relative;
+      }
+      .hero__a:hover {
+        animation: jump 1.5s;
+      }
+
+      .caract-div:hover {
+        scale: 1.1;
+      }
+
+      .col-grid:hover {
+        scale: 1.1;
+      }
+
+      .tecCard {
+        height: 40px;
+        border-radius: 8px;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        font-size: 20px;
+        font-weight: 600;
+        cursor: default;
+        transition: all ease .3s;
+      }
+
+      .tecCard:hover {
+        scale: 1.05;
+      }
+
+      @keyframes jump {
+        0% {
+          transform: translateY(0px)
+        }
+        25% {
+          transform: translateY(-30px)
+        }
+        40% {
+          transform: translateY(0px)
+        }
+        60% {
+          transform: translateY(-30px)
+        }
+        80% {
+          transform: translateY(0px)
+        }
+      }
+    </style>
   </head>
 
-  <body class="text-text">
-    <header
-      class="fixed bg-white h-[90px] w-screen top-0 left-0 border-b-2 border-gray-400"
-    ></header>
-    <a href="./src/pages/dashboard/home/home.html">Hola hola hola</a>
+  <body id="body" class="absolute top-0 left-0 overflow-visible overflow-x-hidden text-text font-inter">
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <script src="./src/main.tsx" type="module"></script>
   </body>
 </html>

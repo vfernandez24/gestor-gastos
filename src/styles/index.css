@@ -15,6 +15,23 @@
   background-color: #ebebeb;
 }
 
+::-webkit-scrollbar-button:decrement {
+  height: 20px;
+  background-color: #ebebeb;
+  background-image: url('/gestor-gastos/public/arrow-up.svg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+::-webkit-scrollbar-button:increment {
+  height: 20px;
+  background-color: #ebebeb;
+  background-image: url('/gestor-gastos/public/arrow-down.svg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .dark::-webkit-scrollbar-track {
   background-color: #d1d5db50;
 }

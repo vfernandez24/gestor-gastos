@@ -10,20 +10,20 @@ function Navigation({ functionHandle }: Props) {
 
   return (
     <header
-      className={`max-h-20 border-b-2 flex items-center justify-between px-[2.5%] overflow-hidden ${
+      className={`h-16 bg-white w-screen border-b-[1px] flex items-center justify-between px-[2.5%] overflow-hidden ${
         settings.tema == "light"
           ? "bg-white border-gray-300"
           : "bg-backgroundDark border-gray-500"
       }`}
     >
-      <a href={"/"} className="logo h-full ml-[2.5%]">
+      <a href={"/"} className="h-full ml-[2.5%]">
         <img
           src={
             settings.tema == "light"
               ? "/gestor-gastos/public/Imagologo.png"
               : "/gestor-gastos/public/imagologoDark.png"
           }
-          className="h-24 max-md:h-20"
+          className="h-[70px] max-md:h-20"
         />
       </a>
       <div className="min-w-[25vw] w-fit flex justify-end gap-4 items-center h-full">

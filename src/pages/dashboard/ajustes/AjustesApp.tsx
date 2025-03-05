@@ -2,6 +2,7 @@ import { useRef, useState } from 'react'
 import { loadFromStorage, saveToStorage } from '../../../storage'
 import { initialSettings, Settings } from '../../../data/settingsData'
 import { translations } from './translations'
+import handleScroll from '../../../scroll'
 
 type Props = {}
 
@@ -89,12 +90,6 @@ function AjustesApp ({}: Props) {
   const section3Ref = useRef<HTMLDivElement>(null)
   const section4Ref = useRef<HTMLDivElement>(null)
   const section5Ref = useRef<HTMLDivElement>(null)
-
-  const handleScroll = (targetRef: React.RefObject<HTMLDivElement>) => {
-    if (targetRef.current) {
-      targetRef.current.scrollIntoView({ behavior: 'smooth' })
-    }
-  }
 
   return (
     <>
