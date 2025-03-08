@@ -1,5 +1,6 @@
 import { loadFromStorage } from "../storage";
 import { initialSettings } from "../data/settingsData";
+import { Link } from "react-router-dom";
 
 type Props = {
   functionHandle: () => void;
@@ -16,16 +17,16 @@ function Navigation({ functionHandle }: Props) {
           : "bg-backgroundDark border-gray-500"
       }`}
     >
-      <a href={"/"} className="h-full ml-[2.5%]">
+      <Link to="/gestor-gastos/" className="h-full ml-[2.5%]">
         <img
           src={
             settings.tema == "light"
-              ? "/gestor-gastos/public/Imagologo.png"
-              : "/gestor-gastos/public/imagologoDark.png"
+              ? "/gestor-gastos/images/Imagologo.png"
+              : "/gestor-gastos/images/imagologoDark.png"
           }
           className="h-[70px] max-md:h-20"
         />
-      </a>
+      </Link>
       <div className="min-w-[25vw] w-fit flex justify-end gap-4 items-center h-full">
         {location.pathname.includes("/index.html") ? (
           <nav className="flex items-center justify-center h-full header__nav w-fit gap-7">

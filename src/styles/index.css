@@ -18,7 +18,7 @@
 ::-webkit-scrollbar-button:decrement {
   height: 20px;
   background-color: #ebebeb;
-  background-image: url('/gestor-gastos/public/arrow-up.svg');
+  background-image: url('/gestor-gastos/images/arrow-up.svg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -26,7 +26,7 @@
 ::-webkit-scrollbar-button:increment {
   height: 20px;
   background-color: #ebebeb;
-  background-image: url('/gestor-gastos/public/arrow-down.svg');
+  background-image: url('/gestor-gastos/images/arrow-down.svg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

@@ -5,18 +5,17 @@ import { useRef } from "react";
 type Props = {};
 
 function Index({}: Props) {
-
-  const section1Ref = useRef<HTMLDivElement>(null)
-  const section2Ref = useRef<HTMLDivElement>(null)
-  const section3Ref = useRef<HTMLDivElement>(null)
-  const section4Ref = useRef<HTMLDivElement>(null)
+  const section1Ref = useRef<HTMLDivElement>(null);
+  const section2Ref = useRef<HTMLDivElement>(null);
+  const section3Ref = useRef<HTMLDivElement>(null);
+  const section4Ref = useRef<HTMLDivElement>(null);
 
   return (
     <>
       <header className="z-10 h-16 bg-white w-screen border-b-[1px] flex fixed top-0 left-0 items-center justify-between px-[2.5%] overflow-hidden">
         <a href="" className="h-full ml-[2.5%]">
           <img
-            src="/gestor-gastos/public/Imagologo.png"
+            src="/gestor-gastos/images/Imagologo.png"
             className="h-[70px] max-md:h-20"
           />
         </a>
@@ -60,7 +59,7 @@ function Index({}: Props) {
             <div className="p-5">
               <span className="flex items-center gap-4 h-1/5">
                 <img
-                  src="/gestor-gastos//public/simbolo.png"
+                  src="/gestor-gastos/simbolo.png"
                   className="h-10"
                 />
                 <h1 className="text-4xl font-bold text-[#3bb371]">
@@ -253,7 +252,7 @@ function Index({}: Props) {
             </h2>
           </div>
 
-          <div className="pb-16 sobre__container h-fit">
+          <div className="sobre__container h-fit">
             <div className="grid grid-cols-[1fr_1fr] grid-rows-[1fr] w-full h-fit gap-x-6 py-10 px-10">
               <div className="px-20 sobre__div">
                 <p className="px-2 text-lg italic font-light text-justify border-l-8 border-primary">
@@ -286,7 +285,7 @@ function Index({}: Props) {
                   <div className="text-blue-900 border-2 border-blue-900 tecCard">
                     <img
                       className=""
-                      src="/gestor-gastos/public/typescript.svg"
+                      src="/gestor-gastos/images/typescript.svg"
                       alt=""
                     />
                     <span>TypeScript</span>
@@ -298,7 +297,7 @@ function Index({}: Props) {
                   <div className="text-[#86ecce] border-2 border-[#86ecce] tecCard">
                     <img
                       className=""
-                      src="/gestor-gastos/public/tailwind.svg"
+                      src="/gestor-gastos/images/tailwind.svg"
                       alt=""
                     />
                     <span>TailwindCSS3</span>
@@ -306,7 +305,7 @@ function Index({}: Props) {
                   <div className="text-[#aaa3f3] border-2 border-[#aaa3f3] tecCard">
                     <img
                       className="h-5"
-                      src="/gestor-gastos/public/vite.svg"
+                      src="/gestor-gastos/images/vite.svg"
                       alt=""
                     />
                     <span>Vite</span>
@@ -320,9 +319,168 @@ function Index({}: Props) {
             </div>
           </div>
           <div className="text-center">
-            <h2 className="text-4xl font-bold text-gray-900">
-              Lo que dicen nuestros usuarios y cómo ha mejorado su vida financiera
+            <h2 className="text-3xl font-semibold text-gray-900">
+              Lo que dicen nuestros usuarios y cómo ha mejorado su vida
+              financiera
             </h2>
+            <div className="flex items-center justify-center gap-5 px-16 py-5 rese__container">
+              <div className="box boxRes transition-all duration-300 rounded-[10px] m-w-[250px] w-[250px] h-[220px] text-center border border-gray-300 p-[10px] cursor-default">
+                <div className="reseñaTop h-1/4 flex justify-between items-center gap-[2%]">
+                  <img className="h-[49.6px] w-[49.6px] rounded-[50%]" src="/gestor-gastos/images/person.png" />
+                  <div className="w-[73%] h-[49.6px]">
+                    <h2 className="h-3/6 max-w-full whitespace-nowrap overflow-hidden text-ellipsis text-left text-text text-lg leading-[30px] m-0 p-0">MonicaTechie</h2>
+                    <h3 className="star4 h-2/5 w-full text-[17px] text-left mt-[5px] before:hidden">
+                      <i
+                        className="fa-solid fa-star text-[#daa520]"
+                        id="star1"
+                        aria-hidden="true"
+                      ></i>
+                      <i
+                        className="fa-solid fa-star"
+                        id="star2"
+                        aria-hidden="true"
+                      ></i>
+                      <i
+                        className="fa-solid fa-star"
+                        id="star3"
+                        aria-hidden="true"
+                      ></i>
+                      <i
+                        className="fa-solid fa-star"
+                        id="star4"
+                        aria-hidden="true"
+                      ></i>
+                      <i
+                        className="fa-solid fa-star"
+                        id="star5"
+                        aria-hidden="true"
+                      ></i>
+                    </h3>
+                  </div>
+                </div>
+                <div className="reseñaBottom h-[70%] text-left text-lg mt-[5%] pt-2.5">
+                  La página tiene muy buenas descripciones de los productos, lo
+                  que facilita la compra.
+                </div>
+              </div>
+              <div className="box boxRes transition-all duration-300 rounded-[10px] m-w-[250px] w-[250px] h-[220px] text-center border border-gray-300 p-[10px] cursor-default">
+                <div className="reseñaTop h-1/4 flex justify-between items-center gap-[2%]">
+                  <img className="h-[49.6px] w-[49.6px] rounded-[50%]" src="/gestor-gastos/images/person.png" />
+                  <div className="w-[73%] h-[49.6px]">
+                    <h2 className="h-3/6 max-w-full whitespace-nowrap overflow-hidden text-ellipsis text-left text-text text-lg leading-[30px] m-0 p-0">MonicaTechie</h2>
+                    <h3 className="star4 h-2/5 w-full text-[17px] text-left mt-[5px] before:hidden">
+                      <i
+                        className="fa-solid fa-star text-[#daa520]"
+                        id="star1"
+                        aria-hidden="true"
+                      ></i>
+                      <i
+                        className="fa-solid fa-star"
+                        id="star2"
+                        aria-hidden="true"
+                      ></i>
+                      <i
+                        className="fa-solid fa-star"
+                        id="star3"
+                        aria-hidden="true"
+                      ></i>
+                      <i
+                        className="fa-solid fa-star"
+                        id="star4"
+                        aria-hidden="true"
+                      ></i>
+                      <i
+                        className="fa-solid fa-star"
+                        id="star5"
+                        aria-hidden="true"
+                      ></i>
+                    </h3>
+                  </div>
+                </div>
+                <div className="reseñaBottom h-[70%] text-left text-lg mt-[5%] pt-2.5">
+                  La página tiene muy buenas descripciones de los productos, lo
+                  que facilita la compra.
+                </div>
+              </div>
+              <div className="box boxRes transition-all duration-300 rounded-[10px] m-w-[250px] w-[250px] h-[220px] text-center border border-gray-300 p-[10px] cursor-default">
+                <div className="reseñaTop h-1/4 flex justify-between items-center gap-[2%]">
+                  <img className="h-[49.6px] w-[49.6px] rounded-[50%]" src="/gestor-gastos/images/person.png" />
+                  <div className="w-[73%] h-[49.6px]">
+                    <h2 className="h-3/6 max-w-full whitespace-nowrap overflow-hidden text-ellipsis text-left text-text text-lg leading-[30px] m-0 p-0">MonicaTechie</h2>
+                    <h3 className="star4 h-2/5 w-full text-[17px] text-left mt-[5px] before:hidden">
+                      <i
+                        className="fa-solid fa-star text-[#daa520]"
+                        id="star1"
+                        aria-hidden="true"
+                      ></i>
+                      <i
+                        className="fa-solid fa-star"
+                        id="star2"
+                        aria-hidden="true"
+                      ></i>
+                      <i
+                        className="fa-solid fa-star"
+                        id="star3"
+                        aria-hidden="true"
+                      ></i>
+                      <i
+                        className="fa-solid fa-star"
+                        id="star4"
+                        aria-hidden="true"
+                      ></i>
+                      <i
+                        className="fa-solid fa-star"
+                        id="star5"
+                        aria-hidden="true"
+                      ></i>
+                    </h3>
+                  </div>
+                </div>
+                <div className="reseñaBottom h-[70%] text-left text-lg mt-[5%] pt-2.5">
+                  La página tiene muy buenas descripciones de los productos, lo
+                  que facilita la compra.
+                </div>
+              </div>
+              <div className="box boxRes transition-all duration-300 rounded-[10px] m-w-[250px] w-[250px] h-[220px] text-center border border-gray-300 p-[10px] cursor-default">
+                <div className="reseñaTop h-1/4 flex justify-between items-center gap-[2%]">
+                  <img className="h-[49.6px] w-[49.6px] rounded-[50%]" src="/gestor-gastos/images/person.png" />
+                  <div className="w-[73%] h-[49.6px]">
+                    <h2 className="h-3/6 max-w-full whitespace-nowrap overflow-hidden text-ellipsis text-left text-text text-lg leading-[30px] m-0 p-0">MonicaTechie</h2>
+                    <h3 className="star4 h-2/5 w-full text-[17px] text-left mt-[5px] before:hidden">
+                      <i
+                        className="fa-solid fa-star text-[#daa520]"
+                        id="star1"
+                        aria-hidden="true"
+                      ></i>
+                      <i
+                        className="fa-solid fa-star"
+                        id="star2"
+                        aria-hidden="true"
+                      ></i>
+                      <i
+                        className="fa-solid fa-star"
+                        id="star3"
+                        aria-hidden="true"
+                      ></i>
+                      <i
+                        className="fa-solid fa-star"
+                        id="star4"
+                        aria-hidden="true"
+                      ></i>
+                      <i
+                        className="fa-solid fa-star"
+                        id="star5"
+                        aria-hidden="true"
+                      ></i>
+                    </h3>
+                  </div>
+                </div>
+                <div className="reseñaBottom h-[70%] text-left text-lg mt-[5%] pt-2.5">
+                  La página tiene muy buenas descripciones de los productos, lo
+                  que facilita la compra.
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </main>

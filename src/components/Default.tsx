@@ -403,8 +403,8 @@ function Default({}: Props) {
           <img
             src={
               settings.tema == "light"
-                ? "/gestor-gastos/public/simbolo.png"
-                : "/gestor-gastos/public/simboloDark.png"
+                ? "/gestor-gastos/simbolo.png"
+                : "/gestor-gastos/images/simboloDark.png"
             }
             className="w-14 h-14"
           />
@@ -576,8 +576,8 @@ function Default({}: Props) {
           <img
             src={
               settings.tema == "light"
-                ? "/gestor-gastos/public/simbolo.png"
-                : "/gestor-gastos/public/simboloDark.png"
+                ? "/gestor-gastos/simbolo.png"
+                : "/gestor-gastos/images/simboloDark.png"
             }
             className="w-14 h-14"
           />
