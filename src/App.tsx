@@ -1,17 +1,24 @@
 import Default from "./components/Default";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter , Routes, Route, createHashRouter } from "react-router-dom";
 import Index from "./pages/home/Index";
+
+const router = createHashRouter([
+  {
+    path: "/",
+    element: <Index />
+  }
+])
 
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
-          <Route path="/gestor-gastos/" element={<Index />} />
+          <Route path="/" element={<Index />} />
 
-          <Route path="/gestor-gastos/dashboard/*" element={<Default />}></Route>
+          <Route path="/dashboard/*" element={<Default />}></Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 }

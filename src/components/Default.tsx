@@ -976,31 +976,31 @@ function Default({}: Props) {
             </div>
             <nav className="left__nav h-fit w-[250px]">
               <LeftLi
-                aHref="/gestor-gastos/dashboard/home"
+                aHref="/dashboard/home"
                 liInner={String(t("a.0"))}
                 classLi="Resumen"
                 iClass="fa-solid fa-chart-pie"
               ></LeftLi>
               <LeftLi
-                aHref="/gestor-gastos/dashboard/busqueda"
+                aHref="/dashboard/busqueda"
                 liInner={String(t("a.1"))}
                 classLi="Búsqueda"
                 iClass="fa-solid fa-search"
               ></LeftLi>
               <LeftLi
-                aHref="/gestor-gastos/dashboard/transactions"
+                aHref="/dashboard/transactions"
                 liInner={String(t("a.2"))}
                 classLi="Transacciones"
                 iClass="fa-solid fa-exchange-alt"
               ></LeftLi>
               <LeftLi
-                aHref="/gestor-gastos/dashboard/categorias"
+                aHref="/dashboard/categorias"
                 liInner={String(t("a.4"))}
                 classLi="Categorias"
                 iClass="fa-solid fa-folder"
               ></LeftLi>
               <LeftLi
-                aHref="/gestor-gastos/dashboard/otrasOpciones"
+                aHref="/dashboard/otrasOpciones"
                 liInner={String(t("a.5"))}
                 classLi="OtrasOpciones"
                 iClass="fa-solid fa-ellipsis"
@@ -1009,7 +1009,7 @@ function Default({}: Props) {
           </div>
           <nav className="left__nav h-fit w-[250px]">
             <LeftLi
-              aHref="/gestor-gastos/dashboard/ajustes"
+              aHref="/dashboard/ajustes"
               liInner={String(t("a.6"))}
               classLi="Ajustes"
               iClass="fa-solid fa-gear"

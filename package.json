@@ -1,6 +1,7 @@
 {
   "name": "gestor-gastos",
   "private": true,
+  "homepage": "https://vfernandez24.github.io/gestor-gastos/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

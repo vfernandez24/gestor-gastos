@@ -46,7 +46,7 @@ function Index({}: Props) {
           </a>
           <Link
             className="flex px-3 py-2 text-white transition border-2 text-nowrap hover:text-primary rounded-xl bg-primary border-primary hover:bg-white"
-            to="/gestor-gastos/dashboard/home"
+            to="/dashboard/home"
           >
             Accede al Gestor
           </Link>
